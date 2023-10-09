@@ -1,0 +1,154 @@
+/*Generals styles*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;  
+    font-family: 'Patrick Hand', cursive;
+}
+
+/*Styles for body*/
+body{
+    height: 100vh;
+    
+}
+
+/*Styles for principal container*/
+.container{
+    height: 80vh;
+    background-color: #f498c2;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    margin: 10px 20px;
+
+}
+
+/*Style for space input*/
+.div__input{
+    border-radius: 20px;
+    background-color: #B0EFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+    
+}
+
+#input__task{
+    border-color: pink;
+    border-radius: 10px;
+    max-width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*Btn*/
+#btn__submit{
+    border-color: pink;
+    background-color: pink;
+    border-radius: 40px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* Style for space to show all tasks */
+#div__showTask{
+    border-radius: 20px;
+    background-color: #FEFFBF;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 8;
+    margin: 15px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+/*Style for Title*/
+.title{
+    text-align: center;
+    margin: 10px;
+    color: #c997c6;
+    font-size: 3em;
+}
+
+.task{
+    min-height: 70px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 20px 5px 20px;
+    border-bottom: 2px solid pink;
+    color: rgb(132, 61, 124);
+    background-color: #F1EDE9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.p_style{
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.icono{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+
+.tasktoDo{
+    text-decoration: line-through;
+    
+}
+
+.tasktoDoBackground{
+    background-color: #c997c6;
+    border-bottom: 5px solid pink;
+}
+
+
+
+/* Responsive */
+@media (max-width: 700px) {
+    .title {
+      font-size: 2em;
+    }
+    
+    .container {
+        flex-direction: column;
+       
+      }
+
+      #input__task{
+        max-width: 200px;
+        height: 100px;
+        
+    }
+
+    .task{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*Helps to add a linebreak at my text*/  
+        word-break: break-all;
+       
+        
+        /*All sheets adjust with the text content */
+        min-height:auto;
+    }
+    
+    .icono{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    
+  }
